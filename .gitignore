@@ -1,3 +1,5 @@
+gameoflife/out/*
+gameoflife/.idea/*
 # Compiled class file
 *.class
 
