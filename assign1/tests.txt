@@ -1,0 +1,48 @@
+x canary test
+x a dead cell with zero neighbors stays dead
+x a dead cell with one neighbors stays dead
+x a dead cell with two neighbors stays dead
+x a dead cell with five neighbors stays dead
+x a dead cell with eight neighbors stays dead
+x a dead cell with three neighbors comes to life
+x a live cell with one live neighbors dies
+x a live cell with four live neighbors dies
+x a live cell with eight live neighbors dies
+x a live cell with two live neighbors lives
+x a live cell with three live neighbors lives
+x given a live cell at position 3, 3, it generates eight signals for positions
+   (2, 2), (2, 3), (2, 4)...
+x given a live cell at positions 2, 4...
+x given a live cell at position 0, 0 (this is an infinite universe, we have to decide what happens at 0, 0)
+x given no position, generateSignalsForPositions returns an empty list
+x given one position, generateSignalsForPositions returns eight positions
+x given two positions, generateSignalsForPositions returns sixteen positions
+x given three positions, generateSignalsForPositions returns twenty four positions
+x given no positions, countSignals returns an empty Map
+x given one positions, countSignals returns a Map with that position as key and value 1
+x given two of the same positions, countSignals returns a Map with that positions as key and value 2
+x given three positions, first and the third being the same, countSignals returns a Map with two keys. The value for one is 1 and the value for the other is 2
+x given no positions, nextGeneration returns an empty list
+x given one position, nextGeneration returns an empty list
+x given positions (2, 3) and (2, 4), nextGeneration returns an empty list
+x given positions (1, 1), (1, 2), and (3, 0), nextGeneration returns a list with one position (2, 1)
+x given positions (1, 1), (1, 2), and (2, 2), nextGeneration returns a list with positions (1, 1), (1, 2), (2, 1), (2, 2)
+- URL: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+x given Block, nextGeneration returns the same block
+x given Beehive, nextGeneration returns the same Beehive
+x given horizontal blinker, nextGeneration returns vertical blinker
+x given vertical blinker, nextGeneration returns horizontal blinker
+x given glider with one live cell on the top, nextGeneration returns proper result with that cell moving to the right 
+x give an empty list, getBounds returns an empty list
+x given one point, getBounds returns a list with the same point appearing twice
+x given two points, getBounds returns a list with both the points in it,
+	with the left top point first and the right bottom point next
+x given three points, getBounds returns a list with two points, first being top left and the second being bottom right
+x given four different points (none from the previous tests)
+
+x given an empty string parsePoints returns an empty list
+x given an invalid string parsePoints returns an empty list
+x given the string "(1,2)" containing one point with various variations of whitespace
+      parsePoints returns an list containing the point (1,2)
+x given the string "(1,2)(3,4)" parsePoints returns an list containing the points [(1,2), (3,4)]
+x given the string "(1,2)(1,2)" parsePoints returns an list containing the points [(1,2)]

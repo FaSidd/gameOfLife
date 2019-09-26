@@ -1,0 +1,46 @@
+Assign1: Due 11:59PM September 20
+
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list (check in a tests.txt file) and a canary test. Implement at most two other tests, in addition to the canary test, and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+Main thing we learned in this assignment was to take small steps in designing the program. We had to unlearn the fact of just
+diving in and coding is not the correct approach, and that we needed to think of the logic of the program and create tests for them.
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+
+Our current design was completely different from the strategic design, mainly due to the fact, we did not realize there
+were many of the libraries for us to use in Java, which in turn would cut our time dramatically and change the design of the program.
+For example we were thinking of implementing a coordinate class that would take in x and y coordinates and use it to create a grid, but
+that was not necessary since Java had a Point library we could use instead.
+
+3. Were there any surprises or things you did not expect along the way? Any 
+particular problem faced, things you had to tackle that you did not expect 
+beforehand?
+
+We think the main thing we did not expect was the fact of unlearning older habits, was going to be more difficult, in the matter of creating test
+and having to think smaller. We had a hard time of doing that without thinking of the whole design for one small test. So that took some time
+to adjust to. Though unit testing was a slow process in the beginning of program development, it paid off in the end when we were implementing the
+various functions, knowing that they work as expected.
+
+Total [100]: 93
+Build runs the tests without errors [10]:
+Program produces reasonably desired results when run [10]:
+All tests pass [20]:
+Code Coverage [10]:
+Test quality [10]:
+Design quality [20]:
+
+Code quality [10]: -2
+Avoid comments (in GUI) and write expressive code instead.
+
+Answers to questions in assign1.txt [10]: -5
+Lacking in depth of discussions.
