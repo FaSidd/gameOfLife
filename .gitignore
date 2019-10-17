@@ -1,5 +1,6 @@
 gameoflife/out/*
 gameoflife/.idea/*
+.gradle
 # Compiled class file
 *.class
 
