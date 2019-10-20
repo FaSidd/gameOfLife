@@ -44,5 +44,5 @@ x given an empty string parsePoints returns an empty list
 x given an invalid string parsePoints returns an empty list
 x given the string "(1,2)" containing one point with various variations of whitespace
       parsePoints returns an list containing the point (1,2)
-x given the string "(1,2)(3,4)" parsePoints returns an list containing the points [(1,2), (3,4)]
-x given the string "(1,2)(1,2)" parsePoints returns an list containing the points [(1,2)]
+x given the string "(1,2)(3,4)" parsePoints returns a list containing the points [(1,2), (3,4)]
+x given the string "(1,2)(1,2)" parsePoints returns a list containing the points [(1,2)]
